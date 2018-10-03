@@ -15,7 +15,7 @@ Source0:	https://github.com/OpenShot/libopenshot/archive/v%{version}/%{name}-%{v
 Patch1:		libopenshot-0.2.2-fix-build-with-imagemagick7.patch
 
 BuildRequires:	cmake
-BuildRequires:	cppzmq-devel
+#BuildRequires:	cppzmq-devel
 BuildRequires:	doxygen
 BuildRequires:	swig
 BuildRequires:	ffmpeg-devel
@@ -31,6 +31,8 @@ BuildRequires:	pkgconfig(Qt5Gui)
 BuildRequires:	pkgconfig(Qt5Help)
 BuildRequires:	pkgconfig(Qt5Multimedia)
 BuildRequires:	pkgconfig(Qt5MultimediaWidgets)
+BuildRequires:	pkgconfig(jsoncpp)
+BuildRequires:	pkgconfig(libzmq)
 
 %description
 OpenShot Library (libopenshot) is an open-source project
