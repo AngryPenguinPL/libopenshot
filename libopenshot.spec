@@ -6,7 +6,7 @@
 
 Name:		libopenshot
 Version:	0.2.2
-Release:	1
+Release:	2
 Summary:	Library for creating and editing videos
 License:	LGPLv3+
 Group:		System/Libraries
@@ -15,7 +15,9 @@ Source0:	https://github.com/OpenShot/libopenshot/archive/v%{version}/%{name}-%{v
 Patch1:		libopenshot-0.2.2-fix-build-with-imagemagick7.patch
 
 BuildRequires:	cmake
+BuildRequires:  qmake5
 BuildRequires:	cppzmq-devel
+BuildRequires:  pkgconfig(libzmq)
 BuildRequires:	doxygen
 BuildRequires:	swig
 BuildRequires:	ffmpeg-devel
